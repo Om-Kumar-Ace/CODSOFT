@@ -5,7 +5,7 @@ import GallerySection from '../components/GallerySection';
 export default function Home() {
   return (
     <>
-      <div className="home bg-slate-200" id="home">
+      <div className="home bg-slate-200" id="home" >
         <section className="body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="kfc lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
@@ -320,47 +320,58 @@ export default function Home() {
                 <div className="p-2 w-1/2">
                   <div className="relative">
                     <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-                    <input type="text" id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                    <input type="text" id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                   </div>
                 </div>
                 <div className="p-2 w-1/2">
                   <div className="relative">
                     <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                    <input type="email" id="email" name="email" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                   </div>
                 </div>
                 <div className="p-2 w-full">
                   <div className="relative">
                     <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                    <textarea id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    <textarea id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                   </div>
                 </div>
                 <div className="p-2 w-full">
-                  <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                  <button className="flex mx-auto text-white border-0 py-2 px-8  bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100  rounded text-lg">Submit</button>
                 </div>
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a className="text-indigo-500">omkumar@example.com</a>
-                  <p className="leading-normal my-5">1234 Main St.<br />Anytown, USA</p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500">
-                      <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M18.36 6.64a9 9 0 11-12.73 0 9 9 0 0112.73 0z"></path>
-                        <path d="M12 10.49v4.24"></path>
-                        <path d="M12 15.75h.01"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-4 text-gray-500">
-                      <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-6.28 8.08 8.5 8.5 0 01-8.42-1.79 8.38 8.38 0 01-.54-11.4 8.38 8.38 0 0111.4-.54 8.5 8.5 0 011.79 8.42 8.38 8.38 0 01-.95 2.62l-1.8-1.8a5.57 5.57 0 00-.64-6.4"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-4 text-gray-500">
-                      <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M16 8a6 6 0 00-6-6 6 6 0 00-6 6c0 4 6 10 6 10s6-6 6-10z"></path>
-                        <path d="M12 8a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                      </svg>
-                    </a>
-                  </span>
+                  <div className="flex justify-center">
+                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
+                      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
+                        Download CV
+                      </span>
+
+                    </button>
+                    <div className="socal">
+                      <ul className="hover:cursor-pointer flex mx-3 px-3 py-1">
+                        <li className="px-2 mx-2 z-10">
+                          <a href="https://www.linkedin.com/in/om-kr" target="_blank" rel="noopener noreferrer">
+                            <Image src="/img/linkedin.svg" alt="linkedin" width={44} height={44} />
+                          </a>
+                        </li>
+                        <li className="px-2 mx-2 z-10">
+                          <a href="https://github.com/Om-Kumar-Ace" target="_blank" rel="noopener noreferrer">
+                            <Image src="/img/github.svg" alt="github" width={44} height={44} />
+                          </a>
+                        </li>
+                        <li className="px-2 mx-2 z-10">
+                          <a href="https://wa.me/7903465911" target="_blank" rel="noopener noreferrer">
+                            <Image src="/img/whatsapp.svg" alt="Whatsapp" width={44} height={44} />
+                          </a>
+                        </li>
+                        <li className="px-2 mx-2 z-10 cursor-pointer">
+                          <a href="mailto:om2005kumar001@gamil.com" target="_blank" rel="noopener noreferrer">
+                            <Image src="/img/gmail.svg" alt="mail" width={44} height={44} />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
