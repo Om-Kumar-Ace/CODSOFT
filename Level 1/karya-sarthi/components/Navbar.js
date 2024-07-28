@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const Navbar = () => {
   const navItems = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '/' },
     { name: 'About', href: '#about' },
-    { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Log in', href: '/login' },
   ];
 
   return (

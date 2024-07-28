@@ -67,8 +67,13 @@ const Home = () => {
       <Section >
           <Contact /> 
       </Section>
-        </div>
       
+          <div className='container mx-auto h-3.5 p-7 m-7 z-10 '></div>
+        </div>
+        
+      <div className="">
+        <ChatBot/>
+      </div>
     </div>
   );
 };
