@@ -31,23 +31,7 @@ const FeaturedSection = () => {
           />
         ))}
       </div>
-      <div className="mt-6 flex flex-col items-center sm:flex-row sm:items-start p-4 bg-blue-500 text-white rounded-lg ">
-        <Image
-          className="rounded-full"
-          src="/worker-image.jpg"
-          alt="Worker of the Month"
-          width={50}
-          height={50}
-        />
-        <div className="ml-0 mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
-          <h3 className="text-lg font-bold">Binod Kumar</h3>
-          <p className="text-sm">Earned: ₹35,000</p>
-        </div>
-        <div className="ml-0 mt-4 sm:ml-auto sm:mt-0 text-center">
-          <span className="block text-xs">You Won</span>
-          <Image src="/trophy-icon.png" alt="Trophy" width={30} height={30} />
-        </div>
-      </div>
+      
     </section>
   );
 };

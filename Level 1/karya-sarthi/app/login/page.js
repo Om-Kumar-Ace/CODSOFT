@@ -6,8 +6,10 @@ import Link from 'next/link'
 
 const Login = () => {
   return (
-    <div className='text-white py-14 container mx-auto'>
-        <h1 className='text-3xl font-bold text-center'>Login to Get your fans to support you</h1>
+    
+      <div className='text-black py-14 container mx-auto'>
+        <div className='container mx-auto h-3.5 p-7 m-7 z-10 '></div>
+        <h1 className='text-3xl font-bold text-center'>Login</h1>
         <div className="social-login-buttons">
         <div className="flex flex-col items-center gap-2 min-h-[45vh] p-10">
 
