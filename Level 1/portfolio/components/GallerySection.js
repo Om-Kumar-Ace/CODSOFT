@@ -5,14 +5,10 @@ const GallerySection = () => {
   const items = [
     { id: 1,  img: '/img/C2.png', subtitle: 'THE SUBTITLE', title: 'Shooting Stars', description: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.' },
     { id: 2,  img: '/img/C1.png', subtitle: 'THE SUBTITLE', title: 'The Catalyzer', description: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.' },
-    { id: 3,  img: '/img/C1.png', subtitle: 'THE SUBTITLE', title: 'The 400 Blows', description: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.' },
-    { id: 4,  img: '/img/C1.png', subtitle: 'THE SUBTITLE', title: 'Neptune', description: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.' },
-    { id: 5,  img: '/img/C1.png', subtitle: 'THE SUBTITLE', title: 'Holden Caulfield', description: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.' },
-    { id: 6,  img: '/img/C1.png', subtitle: 'THE SUBTITLE', title: 'Alper Kamu', description: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.' },
   ];
 
   return (
-    <section className="text-gray-600 body-font bg-slate-200">
+    <section className="text-gray-600 body-font bg-white">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900">Achievements</h1>

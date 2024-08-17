@@ -9,7 +9,7 @@ const Banner = ({ src, currentIndex, banners, onDotClick }) => {
   });
 
   return (
-    <div className="relative w-auto h-80">
+    <div className="relative w-auto h-full">
       <img style={bannerAnimation} src={src} alt="Banner" className="w-full h-full object-cover p-4" />
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {banners.map((_, index) => (

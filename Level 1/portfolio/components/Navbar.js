@@ -1,72 +1,47 @@
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-import React from 'react'
-import Link from 'next/link'
 const Navbar = () => {
+    const navItems = [
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '#about' },
+        { name: 'Skills', href: '#Skills' },
+        { name: 'Projects', href: '#Projects' },
+        { name: 'Achievements', href: '#Achievements' },
+        { name: 'Contact', href: '#Contact' },
+    ];
+
     return (
-        <>
-        <nav className='front fixed w-full top-0 '>
-            <header className="text-black-200 body-font">
-                <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
-                    <a className="flex title-font font-medium items-center hover:cursor-pointer text-black mb-4 md:mb-0">
-                        <img className='rounded-2xl' src='club.png' width={40} alt='' />
-                        <div className="logo font-bold text-white text-2xl">
-                    <span className='text-blue-700'> &lt;</span>
-                   
-                    <span className='text-blue-400'> Om</span><span className='text-black'> Kumar </span><span className='text-blue-700'>/&gt;</span>
-                  
-                    
-                    </div>
-                    </a>
+        <nav className='fixed w-full top-0 z-50 bg-white shadow-lg opacity-100 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl'>
+            <header className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center justify-between">
 
-                    <div className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                        <Link href="#home">
-                            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
-                                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
-                                    Home
-                                </span>
+                <div className="flex items-center space-x-4">
 
-                            </button>
-                        </Link >
-                        <Link href="#about">
-                        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
-                                About
-                            </span>
-
-                        </button>
-                        </Link>
-                        <Link href="#skill">
-                        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
-                                Skills
-                            </span>
-                        </button>
-                            </Link>
-                        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
-                                Projects
-                            </span>
-
-                        </button>
-                        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
-                                Achievement
-                            </span>
-
-                        </button>
-                        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-white rounded-md group-hover:bg-opacity-0">
-                                Contact
-                            </span>
-
-                        </button>
-
+                    <div className="text-2xl font-bold">
+                        <span className="text-blue-700">&lt;</span>
+                        <span className="text-blue-400">Om</span>
+                        <span className="text-black">Kumar</span>
+                        <span className="text-blue-700">/&gt;</span>
                     </div>
                 </div>
+
+
+                <div className="flex items-center space-x-4">
+                    {navItems.map((item) => (
+                        <Link key={item.name} href={item.href}>
+                            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200">
+                                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+                                    {item.name}
+                                </span>
+                            </button>
+                        </Link>
+                    ))}
+                </div>
+
             </header>
         </nav>
-        </>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

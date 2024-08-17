@@ -5,7 +5,7 @@ import GallerySection from '../components/GallerySection';
 export default function Home() {
   return (
     <>
-      <div className="home bg-slate-200" id="home" >
+      <div className="home bg-white" id="home" >
         <section className="body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="kfc lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
@@ -62,7 +62,7 @@ export default function Home() {
         </section>
       </div>
       <div className="about" id="about">
-        <div className="bg-slate-200 body-font flex  items-center py-24">
+        <div className="bg-white body-font flex  items-center py-24">
           <div className="container px-5 mx-auto flex flex-col items-center">
             <div className="text-center mb-20 w-full">
               <h1 className="sm:text-6xl text-3xl font-medium title-font mb-4 text-gray-900">About Me</h1>
@@ -74,35 +74,35 @@ export default function Home() {
           <div className="flex justify-center w-full">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/img/Portarit.jpg"
+                src="/img/Portarit.png"
                 alt="Photo of Om Kumar"
-                width={300}
-                height={350}
+                width={150}
+                height={200}
                 className="rounded-lg shadow-lg"
               />
             </div>
           </div>
         </div>
-        <section className="text-gray-800 bg-slate-200 body-font">
+        <section className="text-gray-800 bg-white body-font">
           <h1 className="sm:text-6xl text-3xl font-medium text-center title-font text-black mb-4">My Education</h1>
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap m-auto">
               <div className="box2 p-2 lg:w-1/3">
-                <div className="h-full bg-white bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <div className="h-full bg-slate-100 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Secondary Education</h2>
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-black mb-3">D.A.V. Public School</h1>
                   <p className="leading-relaxed mb-3">I have completed my Secondary education from DAV Public School Rajrappa Project Ramgarh</p>
                 </div>
               </div>
               <div className="box2 p-2 lg:w-1/3">
-                <div className="h-full bg-white bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <div className="h-full bg-slate-100  bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Higher Secondary Education</h2>
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-black mb-3">D.A.V. Public School</h1>
                   <p className="leading-relaxed mb-3">I have completed my Higher Secondary Education in Science from DAV Public School Rajrappa Project Ramgarh</p>
                 </div>
               </div>
               <div className="box2 p-2 lg:w-1/3">
-                <div className="h-full bg-white bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <div className="h-full bg-slate-100  bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Currently Pursuing</h2>
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-black mb-3">Asansol Engineering College</h1>
                   <p className="leading-relaxed mb-3">Currently I am pursuing my Bachelor of Technology Degree in Computer Science Engineering from Asansol Engineering College which is affiliated to Maulana Abul Kalam Azad University Of Technology.</p>
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="Skill bg-slate-200" id="skill" >
+      <div className="Skills bg-white" id="Skills" >
         <div className="container mx-auto">
           <main className="flex flex-col items-center justify-center min-h-screen py-16">
             <h1 className="text-5xl font-bold mb-8">Skills</h1>
@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </div>
       <div className="Projects" id="Projects">
-        <section className="text-black bg-slate-200 body-font">
+        <section className="text-black bg-white body-font">
           <h1 className="sm:text-6xl text-3xl font-medium text-center title-font text-black mb-4">My Projects</h1>
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
@@ -129,16 +129,16 @@ export default function Home() {
                 <div className="h-full border-2 border-slate-300 rounded-lg overflow-hidden">
                   <Image
                     className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="/img/Screenshot 2024-04-10 154642.png"
+                    src="/img/Screenshot 2024-04-02 210441.png"
                     alt="Twitter Clone"
                     width={500}
                     height={300}
                   />
                   <div className="p-6">
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Clone</h2>
-                    <h1 className="title-font text-lg font-medium text-black mb-3">Twitter</h1>
+                    <h1 className="title-font text-lg font-medium text-black mb-3">Spotify</h1>
                     <p className="leading-relaxed mb-3">
-                      Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                      Try to create a replica of Spotify.
                     </p>
                     <div className="flex items-center flex-wrap">
                       <a className="text-blue-400 group-hover:from-cyan-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
@@ -173,7 +173,7 @@ export default function Home() {
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Clone</h2>
                     <h1 className="title-font text-lg font-medium text-black mb-3">Twitter</h1>
                     <p className="leading-relaxed mb-3">
-                      Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                      Try to create a replica of Twitter.
                     </p>
                     <div className="flex items-center flex-wrap">
                       <a className="text-blue-400 group-hover:from-cyan-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
@@ -195,121 +195,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 md:w-1/3">
-                <div className="h-full border-2 border-slate-300 rounded-lg overflow-hidden">
-                  <Image
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="/img/Screenshot 2024-04-10 154642.png"
-                    alt="Twitter Clone"
-                    width={500}
-                    height={300}
-                  />
-                  <div className="p-6">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Clone</h2>
-                    <h1 className="title-font text-lg font-medium text-black mb-3">Twitter</h1>
-                    <p className="leading-relaxed mb-3">
-                      Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
-                    </p>
-                    <div className="flex items-center flex-wrap">
-                      <a className="text-blue-400 group-hover:from-cyan-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
-                        Check Out
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 md:w-1/3">
-                <div className="h-full border-2 border-slate-300 rounded-lg overflow-hidden">
-                  <Image
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="/img/Screenshot 2024-04-10 154642.png"
-                    alt="Twitter Clone"
-                    width={500}
-                    height={300}
-                  />
-                  <div className="p-6">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Clone</h2>
-                    <h1 className="title-font text-lg font-medium text-black mb-3">Twitter</h1>
-                    <p className="leading-relaxed mb-3">
-                      Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
-                    </p>
-                    <div className="flex items-center flex-wrap">
-                      <a className="text-blue-400 group-hover:from-cyan-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
-                        Check Out
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 md:w-1/3">
-                <div className="h-full border-2 border-slate-300 rounded-lg overflow-hidden">
-                  <Image
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="/img/Screenshot 2024-04-10 154642.png"
-                    alt="Twitter Clone"
-                    width={500}
-                    height={300}
-                  />
-                  <div className="p-6">
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-600 mb-1">Clone</h2>
-                    <h1 className="title-font text-lg font-medium text-black mb-3">Twitter</h1>
-                    <p className="leading-relaxed mb-3">
-                      Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
-                    </p>
-                    <div className="flex items-center flex-wrap">
-                      <a className="text-blue-400 group-hover:from-cyan-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
-                        Check Out
-                        <svg
-                          className="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
 
             </div>
           </div>
         </section>
       </div>
-      <div className=" Achievement">
+      <div className=" Achievements" id="Achievements">
         <GallerySection />
       </div>
-      <div className="Contact">
-        <section className="text-gray-600 body-font relative bg-slate-200">
+      <div className="Contact" id="Contact">
+        <section className="text-gray-600 body-font relative bg-white">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
@@ -336,7 +232,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-2 w-full">
-                  <button className="flex mx-auto text-white border-0 py-2 px-8  bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-black focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100  rounded text-lg">Submit</button>
+                  <button className="flex mx-auto text-white border-0 py-2 px-8  bg-gradient-to-br from-cyan-300 to-blue-400 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-blue-950 focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-100  rounded text-lg">Submit</button>
                 </div>
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                   <div className="flex justify-center">

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="sticky">
+        <div className="fixed z-50">
         <Navbar/>
         </div>
         <div className="min-h-screen front">

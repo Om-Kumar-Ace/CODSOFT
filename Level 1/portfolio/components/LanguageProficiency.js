@@ -21,7 +21,7 @@ const LanguageProficiency = () => {
       <div className="flex flex-wrap -m-2">
         {languages.map((lang) => (
           <div key={lang.name} className="p-2 sm:w-1/2 w-full">
-            <div className="bg-slate-300 rounded flex p-4 h-full items-center justify-between transition-transform duration-500 transform hover:scale-105">
+            <div className="bg-slate-100 rounded flex p-4 h-full items-center justify-between transition-transform duration-500 transform hover:scale-105">
               <Image src={lang.img} alt={lang.name} width={60} height={60} className="transition-transform duration-500 transform hover:scale-125" />
               <span className="title-font font-medium text-lg text-black ml-4">{lang.name}</span>
               <div className="w-2/3 bg-gray-200 rounded-full h-4 ml-4">
